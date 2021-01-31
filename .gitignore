@@ -1,0 +1,16 @@
+*.swp
+*.swo
+
+compile_commands.json
+
+.clangd/
+.cache/
+.vs/
+.vscode/
+.idea/
+.antlr/
+cmake-build-debug/
+cmake-build-release/
+
+build/
+dist/

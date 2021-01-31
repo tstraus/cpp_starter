@@ -1,0 +1,42 @@
+stages:
+  - build
+  - test
+  - package
+
+build:
+  type: build
+  tags:
+    - htpc
+  script:
+    - ./.scripts/configure.sh -r
+    - ./.scripts/build.sh -r
+  cache:
+    policy: push
+    paths:
+      - build
+
+test:
+  type: test
+  tags:
+    - htpc
+  script:
+    - ./.scripts/test.sh -r
+  dependencies:
+    - build
+  cache:
+    policy: pull
+    paths:
+      - build
+
+package:
+  type: package
+  tags:
+    - htpc
+  script:
+    - ./.scripts/package.sh -r
+  dependencies:
+    - test
+  cache:
+    policy: pull
+    paths:
+      - build
