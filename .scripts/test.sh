@@ -8,5 +8,5 @@ fi
 
 cd build/src
 
-ctest . -C $BUILD_TYPE -R dirg* --output-on-failure
+ctest . -C $BUILD_TYPE --output-on-failure
 

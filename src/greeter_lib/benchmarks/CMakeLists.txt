@@ -1,15 +1,14 @@
-project (cpp_tests)
+project (greeter_benchmarks)
 
 set (SOURCE
-    cpp_impl_tests.cpp
-    cpp_lib_tests.cpp
+    greeter_benchmarks.cpp
 )
 
 add_executable (${PROJECT_NAME} ${SOURCE})
 add_test (NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME})
 
 target_link_libraries (${PROJECT_NAME}
-    cpp_static
-    gtest_main
+    greeter_static
+    benchmark_main
 )
 

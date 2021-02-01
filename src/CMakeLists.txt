@@ -19,5 +19,5 @@ if (NOT WIN32)
     endif ()
 endif ()
 
-add_subdirectory (cpp_lib)
-add_subdirectory (cpp_exe)
+add_subdirectory (greeter_lib)
+add_subdirectory (greeter_exe)

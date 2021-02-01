@@ -1,4 +1,4 @@
-project (cpp_cli)
+project (greeter_cli)
 
 set (SOURCE
     main.cpp
@@ -7,7 +7,7 @@ set (SOURCE
 add_executable (${PROJECT_NAME} ${SOURCE})
 
 target_link_libraries (${PROJECT_NAME}
-    PRIVATE cpp_impl
+    PRIVATE greeter_impl
     PRIVATE absl::flags
 )
 

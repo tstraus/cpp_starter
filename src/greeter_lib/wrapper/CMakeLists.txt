@@ -1,12 +1,12 @@
 # Static C Wrapper
-project (cpp_static)
+project (greeter_static)
 
 set (HEADERS
-    cpp.h
+    greeter.h
 )
 
 set (SOURCE
-    cpp.cpp
+    greeter.cpp
 )
 
 add_library (${PROJECT_NAME} STATIC ${SOURCE})
@@ -16,21 +16,21 @@ target_include_directories (${PROJECT_NAME}
 )
 
 target_link_libraries (${PROJECT_NAME}
-    PUBLIC cpp_impl
+    PUBLIC greeter_impl
 )
 
 install (TARGETS ${PROJECT_NAME} DESTINATION lib)
-install (FILES ${HEADERS} DESTINATION include/cpp)
+install (FILES ${HEADERS} DESTINATION include/greeter)
 
 # Shared C Wrapper
-project (cpp)
+project (greeter)
 
 set (HEADERS
-    cpp.h
+    greeter.h
 )
 
 set (SOURCE
-    cpp.cpp
+    greeter.cpp
 )
 
 add_library (${PROJECT_NAME} SHARED ${SOURCE})
@@ -40,9 +40,9 @@ target_include_directories (${PROJECT_NAME}
 )
 
 target_link_libraries (${PROJECT_NAME}
-    PUBLIC cpp_impl
+    PUBLIC greeter_impl
 )
 
 install (TARGETS ${PROJECT_NAME} DESTINATION lib)
-install (FILES ${HEADERS} DESTINATION include/cpp)
+install (FILES ${HEADERS} DESTINATION include/greeter)
 
