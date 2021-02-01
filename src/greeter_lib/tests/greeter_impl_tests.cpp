@@ -36,4 +36,3 @@ TEST(GreeterImplTests, Count)
     g.greet("three");
     ASSERT_EQ(g.totalGreeted(), 3);
 }
-

@@ -21,4 +21,3 @@ extern "C"
 }
 
 #endif // __GREETER_H__
-

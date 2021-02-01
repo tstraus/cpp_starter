@@ -41,4 +41,3 @@ TEST(GreeterLibTests, Count)
     greeter_greet(g, "three");
     ASSERT_EQ(greeter_total_greeted(g), 3);
 }
-
