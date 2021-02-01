@@ -8,7 +8,8 @@ add_executable (${PROJECT_NAME} ${SOURCE})
 
 target_link_libraries (${PROJECT_NAME}
     PRIVATE greeter_impl
-    PRIVATE absl::flags
+    PRIVATE absl::flags_parse
+    PRIVATE absl::flags_config
 )
 
 install (TARGETS ${PROJECT_NAME} DESTINATION bin)

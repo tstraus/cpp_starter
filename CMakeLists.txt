@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.14.0)
 
 set (CMAKE_CXX_STANDARD 17)
 
-project (cpp_starter)
+project (greeter)
 set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set (CMAKE_POSITION_INDEPENDENT_CODE ON)
 
@@ -19,7 +19,7 @@ add_subdirectory (src)
 # Packaging support
 set (CPACK_GENERATOR "ZIP")
 set (CPACK_PACAKGE_VENDOR "tstraus")
-set (CPACK_PACKAGE_DESCRIPTION_SUMMARY "cpp_starter")
+set (CPACK_PACKAGE_DESCRIPTION_SUMMARY "greeter")
 set (CPACK_PACKAGE_VERSION_MAJOR 0)
 set (CPACK_PACKAGE_VERSION_MINOR 1)
 set (CPACK_PACKAGE_VERSION_PATCH 0)
