@@ -1,5 +1,5 @@
-#ifndef __GREETER_IMPL_HPP__
-#define __GREETER_IMPL_HPP__
+#ifndef GREETER_IMPL_HPP
+#define GREETER_IMPL_HPP
 
 #include "absl/strings/string_view.h"
 #include "absl/synchronization/mutex.h"

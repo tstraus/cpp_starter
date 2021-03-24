@@ -8,9 +8,7 @@ Greeter::Greeter() : total(0)
 {
 }
 
-Greeter::~Greeter()
-{
-}
+Greeter::~Greeter() = default;
 
 size_t Greeter::greet(const absl::string_view& name)
 {

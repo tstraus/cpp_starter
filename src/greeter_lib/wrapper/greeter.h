@@ -1,5 +1,5 @@
-#ifndef __GREETER_H__
-#define __GREETER_H__
+#ifndef GREETER_H
+#define GREETER_H
 
 #include <cstddef>
 
