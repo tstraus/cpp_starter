@@ -1,3 +1,12 @@
 Checks: 'performance-*,
 readability-*,
-portability-*'
+portability-*,
+abseil-*,
+bugprone-*,
+clang-analyzer-*,
+concurrency-*,
+modernize-*,
+-readability-magic-numbers,
+-modernize-use-nodiscard,
+-modernize-use-trailing-return-type,
+-bugprone-macro-parentheses'

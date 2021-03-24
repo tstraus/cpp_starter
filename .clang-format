@@ -2,7 +2,11 @@ BasedOnStyle: Microsoft
 PointerAlignment: Left
 AlwaysBreakTemplateDeclarations: true
 AllowAllParametersOfDeclarationOnNextLine: false
+AllowAllArgumentsOnNextLine: false
 BreakInheritanceList: BeforeColon
 BreakConstructorInitializers: BeforeColon
 BinPackArguments: false
 BinPackParameters: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+AllowAllConstructorInitializersOnNextLine: false
+AlignEscapedNewlines: Left
