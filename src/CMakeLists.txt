@@ -20,4 +20,13 @@ if (NOT WIN32)
 endif ()
 
 add_subdirectory (greeter_lib)
-add_subdirectory (greeter_exe)
+add_subdirectory (greeter_cli)
+
+find_package(Qt6 COMPONENTS Widgets REQUIRED)
+if (${Qt6_FOUND})
+    set(CMAKE_AUTOMOC ON)
+    set(CMAKE_AUTORCC ON)
+    set(CMAKE_AUTOUIC ON)
+
+    add_subdirectory (greeter_gui)
+endif ()

@@ -21,8 +21,8 @@ if [[ -e `command -v clang` && -e `command -v clang++` ]]; then
     fi
 fi
 
-if [[ -e `command -v ninja`|| -e `command -v ninja-build` ]]; then
-    cmake -G Ninja $LLD_FLAGS -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_INSTALL_PREFIX:PATH=dist ..
-else
+#if [[ -e `command -v ninja`|| -e `command -v ninja-build` ]]; then
+#    cmake -G Ninja $LLD_FLAGS -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_INSTALL_PREFIX:PATH=dist ..
+#else
     cmake $LLD_FLAGS -DCMAKE_BUILD_TYPE=$BUILD_TYPE -DCMAKE_INSTALL_PREFIX:PATH=dist ..
-fi
+#fi
