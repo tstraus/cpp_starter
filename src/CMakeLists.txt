@@ -22,7 +22,7 @@ endif ()
 add_subdirectory (greeter_lib)
 add_subdirectory (greeter_cli)
 
-find_package(Qt6 COMPONENTS Widgets REQUIRED)
+find_package(Qt6 COMPONENTS Widgets OPTIONAL)
 if (${Qt6_FOUND})
     set(CMAKE_AUTOMOC ON)
     set(CMAKE_AUTORCC ON)
