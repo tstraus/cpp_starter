@@ -1,9 +1,9 @@
 set (CMAKE_DEBUG_POSTFIX d)
 
-include (cmake/Externals.cmake)
-enable_testing ()
+include (cmake/Externals.cmake) # get third party libs
+enable_testing () # turn on CTest
 
-set (CMAKE_CXX_VISIBILITY_PRESET hidden)
+set (CMAKE_CXX_VISIBILITY_PRESET hidden) # hide symbols in shared objects by default
 
 # various debugging and profiling options
 if (NOT WIN32)
@@ -22,8 +22,10 @@ endif ()
 add_subdirectory (greeter_lib)
 add_subdirectory (greeter_cli)
 
+# optional Qt based greeter
 find_package(Qt6 COMPONENTS Widgets QUIET)
 if (${Qt6_FOUND})
+    # let CMake figure out the ui stuff
     set(CMAKE_AUTOMOC ON)
     set(CMAKE_AUTORCC ON)
     set(CMAKE_AUTOUIC ON)
