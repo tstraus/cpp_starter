@@ -23,12 +23,6 @@ add_subdirectory (greeter_lib)
 add_subdirectory (greeter_cli)
 
 # optional Qt based greeter
-find_package(Qt6 COMPONENTS Widgets QUIET)
 if (${Qt6_FOUND})
-    # let CMake figure out the ui stuff
-    set(CMAKE_AUTOMOC ON)
-    set(CMAKE_AUTORCC ON)
-    set(CMAKE_AUTOUIC ON)
-
     add_subdirectory (greeter_gui)
 endif ()
