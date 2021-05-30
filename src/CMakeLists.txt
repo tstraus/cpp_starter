@@ -21,6 +21,7 @@ endif ()
 
 add_subdirectory (greeter_lib)
 add_subdirectory (greeter_cli)
+add_subdirectory (greeter_server)
 
 # optional Qt based greeter
 if (${Qt6_FOUND})

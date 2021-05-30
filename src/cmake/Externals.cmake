@@ -15,6 +15,12 @@ CPMAddPackage (
     VERSION 1.8.1
 )
 
+CPMAddPackage (
+    NAME httplib
+    GITHUB_REPOSITORY yhirose/cpp-httplib
+    VERSION 0.8.9
+)
+
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 CPMAddPackage (
     NAME googletest
