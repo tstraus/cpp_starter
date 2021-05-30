@@ -1,9 +1,9 @@
 set (CMAKE_DEBUG_POSTFIX d)
 
-include (cmake/Externals.cmake)
-enable_testing ()
+include (cmake/Externals.cmake) # get third party libs
+enable_testing () # turn on CTest
 
-set (CMAKE_CXX_VISIBILITY_PRESET hidden)
+set (CMAKE_CXX_VISIBILITY_PRESET hidden) # hide symbols in shared objects by default
 
 # various debugging and profiling options
 if (NOT WIN32)
@@ -20,4 +20,9 @@ if (NOT WIN32)
 endif ()
 
 add_subdirectory (greeter_lib)
-add_subdirectory (greeter_exe)
+add_subdirectory (greeter_cli)
+
+# optional Qt based greeter
+if (${Qt6_FOUND})
+    add_subdirectory (greeter_gui)
+endif ()

@@ -33,3 +33,11 @@ CPMAddPackage (
         "BENCHMARK_ENABLE_INSTALL OFF"
 )
 
+find_package(Qt6 COMPONENTS Widgets QUIET)
+if (${Qt6_FOUND})
+    # let CMake figure out the ui stuff
+    set(CMAKE_AUTOMOC ON)
+    set(CMAKE_AUTORCC ON)
+    set(CMAKE_AUTOUIC ON)
+endif ()
+
