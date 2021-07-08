@@ -1,5 +1,5 @@
-#ifndef GREETER_H
-#define GREETER_H
+#ifndef GREETER_API_H
+#define GREETER_API_H
 
 #include <cstddef>
 
@@ -20,4 +20,4 @@ extern "C"
     EXPORT size_t greeter_total_greeted(void* context);
 }
 
-#endif // __GREETER_H__
+#endif // GREETER_API_H

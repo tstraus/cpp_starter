@@ -1,4 +1,4 @@
-#include "greeter_impl.hpp"
+#include "greeter.hpp"
 
 #include "gtest/gtest.h"
 
@@ -6,14 +6,14 @@ using greeter::Greeter;
 
 #define TEST_NAME "Margot"
 
-TEST(GreeterImplTests, Greet)
+TEST(GreeterTests, Greet)
 {
     Greeter g;
 
     ASSERT_NO_THROW(g.greet(TEST_NAME));
 }
 
-TEST(GreeterImplTests, Length)
+TEST(GreeterTests, Length)
 {
     Greeter g;
 
@@ -21,7 +21,7 @@ TEST(GreeterImplTests, Length)
     EXPECT_EQ(length, 6);
 }
 
-TEST(GreeterImplTests, Count)
+TEST(GreeterTests, Count)
 {
     Greeter g;
 

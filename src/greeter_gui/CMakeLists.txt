@@ -10,7 +10,7 @@ set (SOURCE
 add_executable (${PROJECT_NAME} ${SOURCE})
 
 target_link_libraries (${PROJECT_NAME}
-    PRIVATE greeter_impl
+    PRIVATE greeter
     PRIVATE Qt6::Widgets
 )
 

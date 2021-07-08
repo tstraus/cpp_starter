@@ -1,6 +1,6 @@
 #include <QMainWindow>
 
-#include "greeter_impl.hpp"
+#include "greeter.hpp"
 
 namespace Ui
 {

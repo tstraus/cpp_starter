@@ -1,6 +1,6 @@
-#include "greeter.h"
+#include "greeter_api.h"
 #include "absl/strings/string_view.h"
-#include "greeter_impl.hpp"
+#include "greeter.hpp"
 
 void* greeter_new()
 {
