@@ -1,6 +1,12 @@
 include (cmake/CPM.cmake)
 
 CPMAddPackage (
+    NAME entt
+    GITHUB_REPOSITORY skypjack/entt
+    VERSION 3.7.1
+)
+
+CPMAddPackage (
     NAME abseil
     GITHUB_REPOSITORY abseil/abseil-cpp
     GIT_TAG 20200923.1

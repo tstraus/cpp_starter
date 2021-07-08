@@ -1,11 +1,13 @@
 #include "greeter_impl.hpp"
 
 #include "spdlog/spdlog.h"
+#include "entt/entt.hpp"
 
 namespace greeter
 {
 Greeter::Greeter() : total(0)
 {
+    entt::registry reg;
 }
 
 Greeter::~Greeter() = default;
