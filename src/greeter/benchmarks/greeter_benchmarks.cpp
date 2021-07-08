@@ -1,7 +1,7 @@
 #include "benchmark/benchmark.h"
 
-#include "greeter.h"
-#include "greeter_impl.hpp"
+#include "greeter.hpp"
+#include "greeter_api.h"
 
 #define TEST_NAME "Margot"
 

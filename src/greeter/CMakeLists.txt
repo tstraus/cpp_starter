@@ -1,12 +1,12 @@
 # Implementation
-project (greeter_impl)
+project (greeter)
 
 set (HEADERS
-    greeter_impl.hpp
+    greeter.hpp
 )
 
 set (SOURCE
-    greeter_impl.cpp
+    greeter.cpp
 )
 
 add_library (${PROJECT_NAME} STATIC ${SOURCE})
@@ -19,7 +19,7 @@ target_link_libraries (${PROJECT_NAME}
     PUBLIC absl::synchronization
 )
 
-add_subdirectory (wrapper)
+add_subdirectory (api)
 add_subdirectory (tests)
 add_subdirectory (benchmarks)
 

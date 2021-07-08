@@ -1,4 +1,4 @@
-#include "greeter_impl.hpp"
+#include "greeter.hpp"
 
 #include "absl/flags/flag.h"
 #include "absl/flags/parse.h"

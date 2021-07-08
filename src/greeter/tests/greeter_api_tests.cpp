@@ -1,10 +1,10 @@
-#include "greeter.h"
+#include "greeter_api.h"
 
 #include "gtest/gtest.h"
 
 #define TEST_NAME "Margot"
 
-TEST(GreeterLibTests, Greet)
+TEST(GreeterApiTests, Greet)
 {
     auto* g = greeter_new();
     ASSERT_NE(g, nullptr);
@@ -16,7 +16,7 @@ TEST(GreeterLibTests, Greet)
     ASSERT_EQ(g, gc);
 }
 
-TEST(GreeterLibTests, Length)
+TEST(GreeterApiTests, Length)
 {
     auto* g = greeter_new();
 
@@ -26,7 +26,7 @@ TEST(GreeterLibTests, Length)
     greeter_free(g);
 }
 
-TEST(GreeterLibTests, Count)
+TEST(GreeterApiTests, Count)
 {
     auto* g = greeter_new();
 
