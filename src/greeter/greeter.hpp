@@ -1,5 +1,5 @@
-#ifndef GREETER_IMPL_HPP
-#define GREETER_IMPL_HPP
+#ifndef GREETER_HPP
+#define GREETER_HPP
 
 #include "absl/strings/string_view.h"
 #include "absl/synchronization/mutex.h"
@@ -22,4 +22,4 @@ class Greeter
 };
 } // namespace greeter
 
-#endif // __GREETER_IMPL_HPP__
+#endif // GREETER_HPP

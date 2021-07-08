@@ -19,7 +19,7 @@ if (NOT WIN32)
     endif ()
 endif ()
 
-add_subdirectory (greeter_lib)
+add_subdirectory (greeter)
 add_subdirectory (greeter_cli)
 add_subdirectory (greeter_server)
 
